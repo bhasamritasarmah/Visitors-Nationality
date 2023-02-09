@@ -23,9 +23,9 @@ namespace VisitorsNationality.Services
             return _visitors.Find(visitor => true).ToList();
         }
 
-        public Visitor Get(string name)
+        public Visitor Get(string id)
         {
-            return _visitors.Find(visitor => visitor.Name == name).FirstOrDefault();
+            return _visitors.Find(visitor => visitor.Id == id).FirstOrDefault();
         }
     }
 }
